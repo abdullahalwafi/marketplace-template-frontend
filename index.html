@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Navbar Digitalmusik</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        .top-info-bar {
+            background-color: #0f9aa7;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .search-bar {
+            background-color: #0f9aa7;
+        }
+
+        .search-bar .form-control,
+        .search-bar .form-select {
+            border-radius: 6px;
+        }
+
+        .navbar-brand img {
+            height: 40px;
+        }
+
+        /* ===== MEGA MENU FIX ===== */
+        .dropdown-mega {
+            position: static;
+        }
+
+        .dropdown-mega .dropdown-menu {
+            width: 100vw;
+            left: 0;
+            right: 0;
+            top: 100%;
+            margin-top: 8px;
+            border-radius: 0;
+            border: 1px solid #eee;
+            padding: 24px 32px;
+        }
+
+        .mega-left {
+            border-right: 1px solid #eee;
+        }
+
+        .mega-left .nav-link {
+            color: #444;
+            font-weight: 500;
+            padding: 8px 12px;
+        }
+
+        .mega-left .nav-link.active {
+            background: #f5f5f5;
+            color: #0f9aa7;
+        }
+
+        .mega-right h6 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .mega-right a {
+            display: block;
+            font-size: 14px;
+            color: #555;
+            text-decoration: none;
+            margin-bottom: 6px;
+            line-height: 1.5;
+        }
+
+        .mega-right a:hover {
+            color: #0f9aa7;
+        }
+
+
+        .kategori-btn {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        .tab-kategori .nav-link {
+            font-weight: 500;
+            color: #555;
+        }
+
+        .tab-kategori .nav-link.active {
+            color: #ff6600;
+            border-bottom: 2px solid #ff6600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR UTAMA -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/Toko speaker profesional untuk berbagai keperluan.png"
+                    alt="Toko speaker profesional untuk berbagai keperluan">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#" class="text-dark text-decoration-none">
+                        <i class="bi bi-cart"></i> Keranjang saya
+                    </a>
+                    <a href="#" class="text-dark text-decoration-none">
+                        <i class="bi bi-person-circle"></i> Masuk/Daftar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SEARCH + INFO BAR -->
+    <div class="search-bar py-3">
+        <div class="container">
+            <div class="row align-items-center g-2">
+                <div class="col-md-5 d-flex gap-2">
+                    <div class="dropdown dropdown-mega">
+                        <button class="kategori-btn dropdown-toggle" data-bs-toggle="dropdown">
+                            ✕ Kategori
+                        </button>
+
+                        <div class="dropdown-menu">
+                            <div class="row">
+                                <!-- KIRI -->
+                                <div class="col-md-3 mega-left">
+                                    <ul class="nav flex-column nav-pills">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-bs-toggle="pill" href="#pc">PC & Laptop</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="#smartphone">Smartphone &
+                                                Tablet</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#electronic">Electronic</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#home-appliance">Home
+                                                Appliance</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#photography">Photography</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="#fashion-beauty">Fashion &
+                                                Beauty</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#toys-kids-baby">Toys, Kids &
+                                                Baby</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Hobby</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- KANAN -->
+                                <div class="col-md-9 mega-right">
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="pc">
+                                            <div class="row g-4">
+                                                <div class="col-md-3">
+                                                    <h6>PC & Server</h6>
+                                                    <a href="#">Mini PC</a>
+                                                    <a href="#">Workstation & Server</a>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <h6>Komponen Komputer</h6>
+                                                    <a href="#">RAM</a>
+                                                    <a href="#">HDD / SSD</a>
+                                                    <a href="#">Heatsink & Fan</a>
+                                                    <a href="#">Power Supply</a>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <h6>Spare Part Laptop</h6>
+                                                    <a href="#">Baterai</a>
+                                                    <a href="#">Keyboard</a>
+                                                    <a href="#">Charger</a>
+                                                    <a href="#">LCD</a>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <h6>Aksesoris</h6>
+                                                    <a href="#">Mouse</a>
+                                                    <a href="#">Keyboard</a>
+                                                    <a href="#">Monitor</a>
+                                                    <a href="#">Webcam</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade show" id="smartphone">
+                                            <div class="row g-4">
+                                                <div class="col-md-3">
+                                                    <h6>Smartphone & Tablet</h6>
+                                                    <a href="#">Smartphone</a>
+                                                    <a href="#">Tablet</a>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <h6>Smartphone & Tablet</h6>
+                                                    <a href="#">Smartphone</a>
+                                                    <a href="#">Tablet</a>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <h6>Smartphone & Tablet</h6>
+                                                    <a href="#">Smartphone</a>
+                                                    <a href="#">Tablet</a>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <h6>Aksesoris</h6>
+                                                    <a href="#">Mouse</a>
+                                                    <a href="#">Keyboard</a>
+                                                    <a href="#">Monitor</a>
+                                                    <a href="#">Webcam</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Cari Speaker">
+                        <button class="btn btn-dark">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-7 d-none d-md-flex justify-content-end gap-4 text-white fw-semibold">
+                    <span>100% ORIGINAL</span>
+                    <span>PENGIRIMAN AMAN</span>
+                    <span>100% PEMBAYARAN AMAN</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.mega-left .nav-link').forEach(link => {
+            link.addEventListener('mouseenter', function () {
+
+                // HAPUS ACTIVE DI SEMUA MENU KIRI
+                document.querySelectorAll('.mega-left .nav-link')
+                    .forEach(el => el.classList.remove('active'));
+
+                // HAPUS ACTIVE DI SEMUA TAB
+                document.querySelectorAll('.mega-right .tab-pane')
+                    .forEach(tab => tab.classList.remove('show', 'active'));
+
+                // AKTIFKAN MENU YANG DI HOVER
+                this.classList.add('active');
+
+                // AMBIL TARGET TAB
+                const target = this.getAttribute('href');
+                const tabPane = document.querySelector(target);
+
+                if (tabPane) {
+                    tabPane.classList.add('show', 'active');
+                }
+            });
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
