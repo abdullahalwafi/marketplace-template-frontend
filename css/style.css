@@ -84,3 +84,61 @@
   color: #ff6600;
   border-bottom: 2px solid #ff6600;
 }
+
+/* ===== PROMO ===== */
+.popular-sound .icon-item {
+  text-align: center;
+  cursor: pointer;
+}
+
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #e6f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: #5f8f94;
+  margin: auto;
+}
+
+.icon-item.active .icon-circle {
+  background: #e6391a;
+  color: #fff;
+  font-weight: bold;
+}
+
+.icon-item small {
+  margin-top: 8px;
+  display: block;
+}
+
+/* PROMO */
+.promo-card {
+  height: 230px;
+  border-radius: 14px;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+
+.promo-left {
+  background: linear-gradient(135deg, #0f9aa7, #0b6f78);
+}
+
+.promo-right {
+  background: #1f1f1f;
+}
+
+.promo-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.promo-right .promo-content {
+  right: 20px;
+  left: auto;
+}

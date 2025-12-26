@@ -14,161 +14,288 @@
 </head>
 
 <body>
+    <header>
+        <!-- NAVBAR UTAMA -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/Toko speaker profesional untuk berbagai keperluan.png"
+                        alt="Toko speaker profesional untuk berbagai keperluan">
+                </a>
 
-    <!-- NAVBAR UTAMA -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="img/Toko speaker profesional untuk berbagai keperluan.png"
-                    alt="Toko speaker profesional untuk berbagai keperluan">
-            </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
 
-            <div class="collapse navbar-collapse" id="mainNavbar">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                </ul>
-
-                <div class="d-flex align-items-center gap-3">
-                    <a href="#" class="text-dark text-decoration-none">
-                        <i class="bi bi-cart"></i> Keranjang saya
-                    </a>
-                    <a href="#" class="text-dark text-decoration-none">
-                        <i class="bi bi-person-circle"></i> Masuk/Daftar
-                    </a>
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <i class="bi bi-cart"></i> Keranjang saya
+                        </a>
+                        <a href="#" class="text-dark text-decoration-none">
+                            <i class="bi bi-person-circle"></i> Masuk/Daftar
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- SEARCH + INFO BAR -->
-    <div class="search-bar py-3">
-        <div class="container">
-            <div class="row align-items-center g-2">
-                <div class="col-md-5 d-flex gap-2">
-                    <div class="dropdown dropdown-mega">
-                        <button class="kategori-btn dropdown-toggle" data-bs-toggle="dropdown">
-                            ✕ Kategori
-                        </button>
+        <!-- SEARCH + INFO BAR -->
+        <div class="search-bar py-3">
+            <div class="container">
+                <div class="row align-items-center g-2">
+                    <div class="col-md-5 d-flex gap-2">
+                        <div class="dropdown dropdown-mega">
+                            <button class="kategori-btn dropdown-toggle" data-bs-toggle="dropdown">
+                                ✕ Kategori
+                            </button>
 
-                        <div class="dropdown-menu">
-                            <div class="row">
-                                <!-- KIRI -->
-                                <div class="col-md-3 mega-left">
-                                    <ul class="nav flex-column nav-pills">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" data-bs-toggle="pill" href="#pc">PC & Laptop</a>
-                                        </li>
-                                        <li class="nav-item"><a class="nav-link" href="#smartphone">Smartphone &
-                                                Tablet</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#electronic">Electronic</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#home-appliance">Home
-                                                Appliance</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#photography">Photography</a>
-                                        </li>
-                                        <li class="nav-item"><a class="nav-link" href="#fashion-beauty">Fashion &
-                                                Beauty</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#toys-kids-baby">Toys, Kids &
-                                                Baby</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Hobby</a></li>
-                                    </ul>
-                                </div>
-
-                                <!-- KANAN -->
-                                <div class="col-md-9 mega-right">
-                                    <div class="tab-content">
-                                        <div class="tab-pane fade show active" id="pc">
-                                            <div class="row g-4">
-                                                <div class="col-md-3">
-                                                    <h6>PC & Server</h6>
-                                                    <a href="#">Mini PC</a>
-                                                    <a href="#">Workstation & Server</a>
-                                                </div>
-
-                                                <div class="col-md-3">
-                                                    <h6>Komponen Komputer</h6>
-                                                    <a href="#">RAM</a>
-                                                    <a href="#">HDD / SSD</a>
-                                                    <a href="#">Heatsink & Fan</a>
-                                                    <a href="#">Power Supply</a>
-                                                </div>
-
-                                                <div class="col-md-3">
-                                                    <h6>Spare Part Laptop</h6>
-                                                    <a href="#">Baterai</a>
-                                                    <a href="#">Keyboard</a>
-                                                    <a href="#">Charger</a>
-                                                    <a href="#">LCD</a>
-                                                </div>
-
-                                                <div class="col-md-3">
-                                                    <h6>Aksesoris</h6>
-                                                    <a href="#">Mouse</a>
-                                                    <a href="#">Keyboard</a>
-                                                    <a href="#">Monitor</a>
-                                                    <a href="#">Webcam</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade show" id="smartphone">
-                                            <div class="row g-4">
-                                                <div class="col-md-3">
-                                                    <h6>Smartphone & Tablet</h6>
-                                                    <a href="#">Smartphone</a>
-                                                    <a href="#">Tablet</a>
-                                                </div>
-
-                                                <div class="col-md-3">
-                                                    <h6>Smartphone & Tablet</h6>
-                                                    <a href="#">Smartphone</a>
-                                                    <a href="#">Tablet</a>
-                                                </div>
-
-                                                <div class="col-md-3">
-                                                    <h6>Smartphone & Tablet</h6>
-                                                    <a href="#">Smartphone</a>
-                                                    <a href="#">Tablet</a>
-                                                </div>
-
-                                                <div class="col-md-3">
-                                                    <h6>Aksesoris</h6>
-                                                    <a href="#">Mouse</a>
-                                                    <a href="#">Keyboard</a>
-                                                    <a href="#">Monitor</a>
-                                                    <a href="#">Webcam</a>
-                                                </div>
-                                            </div>
-                                        </div>
-
+                            <div class="dropdown-menu">
+                                <div class="row">
+                                    <!-- KIRI -->
+                                    <div class="col-md-3 mega-left">
+                                        <ul class="nav flex-column nav-pills">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" data-bs-toggle="pill" href="#pc">PC &
+                                                    Laptop</a>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="#smartphone">Smartphone &
+                                                    Tablet</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="#electronic">Electronic</a>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="#home-appliance">Home
+                                                    Appliance</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="#photography">Photography</a>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="#fashion-beauty">Fashion &
+                                                    Beauty</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="#toys-kids-baby">Toys, Kids &
+                                                    Baby</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="#">Hobby</a></li>
+                                        </ul>
                                     </div>
-                                </div>
 
+                                    <!-- KANAN -->
+                                    <div class="col-md-9 mega-right">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" id="pc">
+                                                <div class="row g-4">
+                                                    <div class="col-md-3">
+                                                        <h6>PC & Server</h6>
+                                                        <a href="#">Mini PC</a>
+                                                        <a href="#">Workstation & Server</a>
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        <h6>Komponen Komputer</h6>
+                                                        <a href="#">RAM</a>
+                                                        <a href="#">HDD / SSD</a>
+                                                        <a href="#">Heatsink & Fan</a>
+                                                        <a href="#">Power Supply</a>
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        <h6>Spare Part Laptop</h6>
+                                                        <a href="#">Baterai</a>
+                                                        <a href="#">Keyboard</a>
+                                                        <a href="#">Charger</a>
+                                                        <a href="#">LCD</a>
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        <h6>Aksesoris</h6>
+                                                        <a href="#">Mouse</a>
+                                                        <a href="#">Keyboard</a>
+                                                        <a href="#">Monitor</a>
+                                                        <a href="#">Webcam</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade show" id="smartphone">
+                                                <div class="row g-4">
+                                                    <div class="col-md-3">
+                                                        <h6>Smartphone & Tablet</h6>
+                                                        <a href="#">Smartphone</a>
+                                                        <a href="#">Tablet</a>
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        <h6>Smartphone & Tablet</h6>
+                                                        <a href="#">Smartphone</a>
+                                                        <a href="#">Tablet</a>
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        <h6>Smartphone & Tablet</h6>
+                                                        <a href="#">Smartphone</a>
+                                                        <a href="#">Tablet</a>
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        <h6>Aksesoris</h6>
+                                                        <a href="#">Mouse</a>
+                                                        <a href="#">Keyboard</a>
+                                                        <a href="#">Monitor</a>
+                                                        <a href="#">Webcam</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Cari Speaker">
+                            <button class="btn btn-dark">
+                                <i class="bi bi-search"></i>
+                            </button>
                         </div>
                     </div>
 
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Cari Speaker">
-                        <button class="btn btn-dark">
-                            <i class="bi bi-search"></i>
-                        </button>
+                    <div class="col-md-7 d-none d-md-flex justify-content-end gap-4 text-white fw-semibold">
+                        <span>100% ORIGINAL</span>
+                        <span>PENGIRIMAN AMAN</span>
+                        <span>100% PEMBAYARAN AMAN</span>
                     </div>
-                </div>
-
-                <div class="col-md-7 d-none d-md-flex justify-content-end gap-4 text-white fw-semibold">
-                    <span>100% ORIGINAL</span>
-                    <span>PENGIRIMAN AMAN</span>
-                    <span>100% PEMBAYARAN AMAN</span>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="https://cek.digitalmusik.id/" target="_blank">
+                                    <img src="img/banner - Toko speaker profesional untuk berbagai keperluan.png"
+                                        class="d-block w-100">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/banner - Toko speaker profesional untuk berbagai keperluan.png"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/banner - Toko speaker profesional untuk berbagai keperluan.png"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popular-sound py-5">
+        <div class="container">
+
+            <!-- TITLE -->
+            <h3 class="text-center mb-4">
+                <span class="text-primary fw-bold">Sound system populer</span> untuk anda
+            </h3>
+
+            <!-- ICON CATEGORY -->
+            <div class="d-flex justify-content-center gap-4 flex-wrap mb-5">
+                <div class="icon-item active">
+                    <div class="icon-circle bg-danger text-white">new</div>
+                    <small class="mt-2 d-block fw-semibold">Baru datang</small>
+                </div>
+
+                <div class="icon-item">
+                    <div class="icon-circle"><i class="bi bi-disc"></i></div>
+                    <small>Subwoofer</small>
+                </div>
+
+                <div class="icon-item">
+                    <div class="icon-circle"><i class="bi bi-sliders"></i></div>
+                    <small>Mixer</small>
+                </div>
+
+                <div class="icon-item">
+                    <div class="icon-circle"><i class="bi bi-speaker"></i></div>
+                    <small>Full Range</small>
+                </div>
+
+                <div class="icon-item">
+                    <div class="icon-circle"><i class="bi bi-soundwave"></i></div>
+                    <small>Power Amplifier</small>
+                </div>
+
+                <div class="icon-item">
+                    <div class="icon-circle"><i class="bi bi-music-note-list"></i></div>
+                    <small>Power Mixer</small>
+                </div>
+
+                <div class="icon-item">
+                    <div class="icon-circle"><i class="bi bi-mic"></i></div>
+                    <small>Speaker Karaoke</small>
+                </div>
+
+                <div class="icon-item">
+                    <div class="icon-circle"><i class="bi bi-sliders"></i></div>
+                    <small>Amplifier Mixer</small>
+                </div>
+            </div>
+
+            <!-- PROMO BANNER -->
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="promo-card promo-left">
+                        <div class="promo-content">
+                            <span class="badge bg-success mb-2">HARGA TERBAIK</span>
+                            <h2 class="fw-bold">Rp 1.000.000</h2>
+                            <p class="mb-3">Promo akhir tahun</p>
+                            <a href="#" class="btn btn-light btn-sm">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="promo-card promo-right">
+                        <div class="promo-content text-end">
+                            <span class="badge bg-light text-dark mb-2">10% OFF</span>
+                            <p class="mb-0 fw-semibold">
+                                Dapatkan 10% lebih banyak di <br>
+                                <strong>Digital Musik Explore Now!</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <script src="js/scripts.js"></script>
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
