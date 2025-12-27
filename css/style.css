@@ -510,6 +510,13 @@
   font-size: 13px;
 }
 
+.maps {
+  height: 450px;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
 @media (max-width: 768px) {
   .product-card {
     width: 200px;
