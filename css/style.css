@@ -142,6 +142,36 @@
   right: 20px;
   left: auto;
 }
+.promo-card {
+  position: relative;
+  height: 230px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* Overlay hitam transparan */
+.promo-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+/* Konten di atas overlay */
+.promo-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+.promo-right .promo-content {
+  right: 20px;
+  left: auto;
+}
 
 /* flash sale */
 .flash-sale-section {
@@ -262,9 +292,6 @@
 }
 
 .badge {
-  position: absolute;
-  top: 8px;
-  left: 8px;
   font-size: 10px;
   padding: 3px 6px;
   border-radius: 6px;
@@ -876,5 +903,16 @@
   }
   .product-actions {
     flex-direction: column;
+  }
+}
+
+/* Responsif */
+@media (max-width: 576px) {
+  .promo-card {
+    height: 180px;
+  }
+
+  .promo-content h2 {
+    font-size: 22px;
   }
 }
