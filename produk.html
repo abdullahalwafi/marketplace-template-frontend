@@ -270,46 +270,133 @@
         <div class="container">
 
             <!-- HEADER -->
-            <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="d-md-flex d-block justify-content-between align-items-center mb-4">
                 <div>
                     <h2 class="fw-bold mb-1">Products</h2>
                 </div>
 
                 <div class="d-flex align-items-center gap-3">
-                    <!-- search -->
+                    <select class="form-select form-select-sm w-auto">
+                        <option>Best Match</option>
+                        <option>Harga Terendah</option>
+                        <option>Harga Tertinggi</option>
+                    </select><!-- search -->
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Cari Speaker">
                         <button class="btn btn-dark">
                             <i class="bi bi-search"></i>
                         </button>
                     </div>
-
-                    <select class="form-select form-select-sm w-auto">
-                        <option>Best Match</option>
-                        <option>Harga Terendah</option>
-                        <option>Harga Tertinggi</option>
-                    </select>
                 </div>
             </div>
 
             <div class="row g-4">
                 <!-- SIDEBAR -->
                 <div class="col-md-3">
-                    <div class="sidebar-box">
-                        <h6 class="fw-bold mb-3">Kategori</h6>
-                        <ul class="category-list">
-                            <li class="active">Subwoofer</li>
-                            <li>Full Range</li>
-                            <li>Speaker</li>
-                            <li>Karaoke</li>
-                            <li>Mixer</li>
-                            <li>Power Mixer</li>
-                            <li>Amplifier</li>
-                            <li>Mixer Amplifier</li>
-                            <li>Power Amplifier</li>
-                        </ul>
+                    <div class="filter-sidebar">
+
+                        <!-- FILTER: KATEGORI (SELECT) -->
+                        <div class="filter-group">
+                            <h6 class="filter-title">Kategori</h6>
+                            <select class="form-select form-select-sm">
+                                <option value="subwoofer" selected>Subwoofer (99)</option>
+                                <option value="full-range">Full Range (45)</option>
+                                <option value="speaker">Speaker (78)</option>
+                                <option value="karaoke">Karaoke (34)</option>
+                                <option value="mixer">Mixer</option>
+                                <option value="power-mixer">Power Mixer</option>
+                                <option value="amplifier">Amplifier</option>
+                                <option value="mixer-amplifier">Mixer Amplifier</option>
+                                <option value="power-amplifier">Power Amplifier</option>
+                            </select>
+                        </div>
+
+                        <!-- FILTER: HARGA -->
+                        <div class="filter-group">
+                            <h6 class="filter-title">Harga</h6>
+                            <div class="price-range">
+                                <input type="number" class="form-control form-control-sm" placeholder="Min">
+                                <span>-</span>
+                                <input type="number" class="form-control form-control-sm" placeholder="Max">
+                            </div>
+                        </div>
+
+                        <!-- FILTER: STOK -->
+                        <div class="filter-group">
+                            <h6 class="filter-title">Ketersediaan</h6>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="stokTersedia" checked>
+                                <label class="form-check-label" for="stokTersedia">
+                                    Stok tersedia
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- FILTER: BRAND -->
+                        <div class="filter-group">
+                            <h6 class="filter-title">Brand</h6>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="audione">
+                                <label class="form-check-label" for="audione">Audione</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="digitalmusik">
+                                <label class="form-check-label" for="digitalmusik">Digital Musik</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="behringer">
+                                <label class="form-check-label" for="behringer">Behringer</label>
+                            </div>
+                        </div>
+                        <!-- FILTER: RATING -->
+                        <div class="filter-group">
+                            <h6 class="filter-title">Rating</h6>
+                        
+                            <label class="rating-item">
+                                <input type="radio" name="rating" value="5">
+                                <span class="stars">★★★★★</span>
+                                <small>5.0</small>
+                            </label>
+                        
+                            <label class="rating-item">
+                                <input type="radio" name="rating" value="4">
+                                <span class="stars">★★★★☆</span>
+                                <small>& Up</small>
+                            </label>
+                        
+                            <label class="rating-item">
+                                <input type="radio" name="rating" value="3">
+                                <span class="stars">★★★☆☆</span>
+                                <small>& Up</small>
+                            </label>
+                        
+                            <label class="rating-item">
+                                <input type="radio" name="rating" value="2">
+                                <span class="stars">★★☆☆☆</span>
+                                <small>& Up</small>
+                            </label>
+                        
+                            <label class="rating-item">
+                                <input type="radio" name="rating" value="1">
+                                <span class="stars">★☆☆☆☆</span>
+                                <small>& Up</small>
+                            </label>
+                        </div>
+
+
+                        <div class="d-block d-flex justify-content-between">
+                            <!-- RESET -->
+                            <button class="btn btn-secondary btn-sm mt-2">
+                                Reset Filter
+                            </button>
+                            <button class="btn btn-outline-dark btn-sm mt-2">
+                                Terapkan
+                            </button>
+                        </div>
+
                     </div>
                 </div>
+
 
                 <!-- PRODUCT GRID -->
                 <div class="col-md-9">
@@ -828,6 +915,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- pagination -->
                         <div class="col-md-12">
                             <div class="d-flex justify-content-center align-items-center gap-3">
                                 <button class="btn btn-outline-dark btn-sm">Previous</button>
