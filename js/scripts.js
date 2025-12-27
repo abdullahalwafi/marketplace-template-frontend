@@ -76,6 +76,54 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(slideNext, 3000);
 });
 const preview = document.getElementById("mainPreview");
+
+preview.addEventListener("mouseenter", () => {
+  preview.classList.add("zoom-active");
+});
+
+preview.addEventListener("mouseleave", () => {
+  preview.classList.remove("zoom-active");
+});
+
+// MOBILE TAP ZOOM
+preview.addEventListener("click", () => {
+  preview.classList.toggle("zoom-active");
+});
+let startX = 0;
+let endX = 0;
+
+preview.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+});
+
+preview.addEventListener("touchmove", (e) => {
+  endX = e.touches[0].clientX;
+});
+
+preview.addEventListener("touchend", () => {
+  if (startX - endX > 50) {
+    slideNextThumb();
+  }
+  if (endX - startX > 50) {
+    slidePrevThumb();
+  }
+});
+
+function slideNextThumb() {
+  const active = document.querySelector(".thumb.active");
+  const next = active.nextElementSibling;
+  if (next && next.classList.contains("thumb")) {
+    next.click();
+  }
+}
+
+function slidePrevThumb() {
+  const active = document.querySelector(".thumb.active");
+  const prev = active.previousElementSibling;
+  if (prev && prev.classList.contains("thumb")) {
+    prev.click();
+  }
+}
 const thumbs = document.querySelectorAll(".thumb");
 const thumbList = document.getElementById("thumbList");
 
