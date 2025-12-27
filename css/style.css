@@ -520,9 +520,7 @@
 
 .category-page {
   background-color: #fff;
-  padding: 20px;
   border-radius: 15px;
-  width: 100%;
 }
 
 /* SIDEBAR */
@@ -591,6 +589,10 @@
 
 @media (max-width: 768px) {
   .product-card {
-    width: 180px;
+    width: 200px;
+  }
+@media (max-width: 425px) {
+  .product-card {
+    width: 160px;
   }
 }
