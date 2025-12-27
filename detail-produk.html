@@ -333,32 +333,52 @@
                 <!-- RIGHT: BUY BOX -->
                 <div class="col-md-3">
                     <div class="buy-box">
-                        <p class="total-label">Total Harga</p>
-                        <h4 class="total-price">Rp 2.000.000</h4>
 
-                        <!-- QUANTITY -->
-                        <div class="qty-group">
-                            <label class="qty-label">Quantity</label>
-                            <input type="number" class="form-control form-control-sm" min="1" value="1">
+                        <!-- TOTAL -->
+                        <small class="text-muted">TOTAL HARGA :</small>
+                        <h3 class="fw-bold">Rp 2.000.000</h3>
+
+                        <div class="stock-status">
+                            <span class="dot"></span> In stock
                         </div>
 
-                        <button class="btn btn-success w-100 mb-2">
-                            Tambah ke Keranjang
-                        </button>
-                        <button class="btn btn-warning w-100">
-                            Beli Langsung
-                        </button>
+                        <!-- QTY -->
+                        <div class="qty-control">
+                            <button type="button" class="qty-btn">−</button>
+                            <input type="number" value="1" min="1">
+                            <button type="button" class="qty-btn">+</button>
+                        </div>
 
-                        <small class="text-muted d-block mt-2">
-                            📦 Dikirim dari Jakarta
-                        </small>
+                        <!-- ACTION -->
+                        <button class="btn btn-cart w-100">TAMBAH KERANJANG</button>
+                        <button class="btn btn-buy w-100">BELI LANGSUNG</button>
 
-                        <div class="support-box mt-3">
-                            <small>Customer Service 24/7</small>
-                            <h6>08991231232</h6>
+                        <!-- WISHLIST -->
+                        <div class="buy-links">
+                            <span class="text-success">♥ Wishlist added</span>
+                            <span>⟳ Compare</span>
+                        </div>
+
+                        <!-- PAYMENT -->
+                        <div class="payment-box">
+                            <small class="text-muted d-block mb-2">Guaranteed Safe Checkout</small>
+                            <div class="payment-icons">
+                                <img src="img/payment - Toko speaker profesional untuk berbagai keperluan.png" alt="payment">
+                            </div>
                         </div>
                     </div>
+
+                    <!-- SUPPORT -->
+                    <div class="support-box">
+                        <span class="badge bg-dark mb-2">Pesan cepat 24/7</span>
+                        <h5 class="fw-bold">0899123123</h5>
+                    </div>
+
+                    <small class="text-muted d-block mt-2">
+                        🚚 dikirim dari <strong>Jakarta</strong>
+                    </small>
                 </div>
+
 
 
             </div>

@@ -174,3 +174,15 @@ document.querySelector(".thumb-nav.next").onclick = () => {
 document.querySelector(".thumb-nav.prev").onclick = () => {
   thumbList.scrollLeft -= 80;
 };
+document.querySelectorAll(".qty-control").forEach((box) => {
+  const input = box.querySelector("input");
+  const btns = box.querySelectorAll(".qty-btn");
+
+  btns[0].onclick = () => {
+    if (input.value > 1) input.value--;
+  };
+
+  btns[1].onclick = () => {
+    input.value++;
+  };
+});
