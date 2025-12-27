@@ -662,6 +662,51 @@
   border-color: #0f9aa7;
   background: #e6f7f8;
 }
+.variant-group {
+  margin-top: 16px;
+}
+
+.variant-label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.variant-options {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.variant-option {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.variant-option input {
+  display: none;
+}
+
+.variant-option:has(input:checked) {
+  border-color: #0f9aa7;
+  background: #e6f7f8;
+  font-weight: 600;
+}
+
+.qty-group {
+  margin-bottom: 12px;
+}
+
+.qty-label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: block;
+}
 
 .promo-box {
   background: #e6f7f8;
