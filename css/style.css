@@ -626,6 +626,149 @@
   color: #777;
 }
 
+.product-image {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.price-range {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.product-meta {
+  list-style: none;
+  padding: 0;
+  font-size: 13px;
+}
+
+.variant-box {
+  margin-top: 15px;
+}
+
+.variant-btn {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  margin-right: 6px;
+  font-size: 13px;
+}
+
+.variant-btn.active {
+  border-color: #0f9aa7;
+  background: #e6f7f8;
+}
+
+.promo-box {
+  background: #e6f7f8;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.buy-box {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.qty-box {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.qty-box input {
+  width: 50px;
+  text-align: center;
+}
+.product-gallery {
+  max-width: 420px;
+}
+
+.main-image {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.main-image img {
+  max-height: 360px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.thumb-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.thumb-list {
+  display: flex;
+  gap: 8px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.thumb {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 6px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.thumb.active {
+  border-color: #0f9aa7;
+}
+
+.thumb-nav {
+  background: #fff;
+  border: 1px solid #ddd;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.thumb-nav.prev {
+  margin-right: 6px;
+}
+
+.thumb-nav.next {
+  margin-left: 6px;
+}
+.video-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #fff;
+  background: #000;
+  cursor: pointer;
+}
+
+.video-thumb::after {
+  content: "VIDEO";
+  position: absolute;
+  bottom: 4px;
+  font-size: 9px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
 @media (max-width: 768px) {
   .product-card {
     width: 160px;
