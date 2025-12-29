@@ -1264,7 +1264,7 @@
   }
 
   .cart-icons {
-    gap: 12px;
+    gap: 2px;
     margin-left: 0;
   }
 
@@ -1316,11 +1316,6 @@
     order: 2;
     font-weight: 600;
     font-size: 16px;
-  }
-
-  .cart-item .cart-icons {
-    top: 10px;
-    left: 125px;
   }
   .hapus {
     display: block;
