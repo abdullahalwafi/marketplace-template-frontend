@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Digital Musik - Toko Speaker Profesional</title>
+    <title>Produk - Digital Musik - Toko Speaker Profesional</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -268,92 +268,622 @@
         </div>
     </section>
 
-    <!-- popular sound -->
-    <section class="popular-sound py-5">
+    <!-- CONTENT -->
+    <section class="category-page py-4">
         <div class="container">
 
-            <!-- TITLE -->
-            <h2 class="text-center mb-4">
-                <span class="text-primary fw-bold">Sound system populer</span> untuk anda
-            </h2>
-
-            <!-- ICON CATEGORY -->
-            <div class="d-flex justify-content-center gap-4 flex-wrap mb-5">
-                <div class="icon-item active">
-                    <div class="icon-circle bg-danger text-white">new</div>
-                    <small class="mt-2 d-block fw-semibold">Baru datang</small>
+            <!-- HEADER -->
+            <div class="d-md-flex d-block justify-content-between align-items-center mb-4">
+                <div>
+                    <h2 class="fw-bold mb-1">Products</h2>
                 </div>
 
-                <div class="icon-item">
-                    <div class="icon-circle"><i class="bi bi-disc"></i></div>
-                    <small>Subwoofer</small>
-                </div>
-
-                <div class="icon-item">
-                    <div class="icon-circle"><i class="bi bi-sliders"></i></div>
-                    <small>Mixer</small>
-                </div>
-
-                <div class="icon-item">
-                    <div class="icon-circle"><i class="bi bi-speaker"></i></div>
-                    <small>Full Range</small>
-                </div>
-
-                <div class="icon-item">
-                    <div class="icon-circle"><i class="bi bi-soundwave"></i></div>
-                    <small>Power Amplifier</small>
-                </div>
-
-                <div class="icon-item">
-                    <div class="icon-circle"><i class="bi bi-music-note-list"></i></div>
-                    <small>Power Mixer</small>
-                </div>
-
-                <div class="icon-item">
-                    <div class="icon-circle"><i class="bi bi-mic"></i></div>
-                    <small>Speaker Karaoke</small>
-                </div>
-
-                <div class="icon-item">
-                    <div class="icon-circle"><i class="bi bi-sliders"></i></div>
-                    <small>Amplifier Mixer</small>
+                <div class="d-flex align-items-center gap-3">
+                    <select class="form-select form-select-sm w-auto">
+                        <option>Best Match</option>
+                        <option>Harga Terendah</option>
+                        <option>Harga Tertinggi</option>
+                    </select><!-- search -->
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Cari Speaker">
+                        <button class="btn btn-dark">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
 
-            <!-- PROMO BANNER -->
             <div class="row g-4">
-                <!-- PROMO KIRI -->
-                <div class="col-md-6">
-                    <div class="promo-card promo-left"
-                        style="background-image: url('img/banner\ 3\ -\ Toko\ speaker\ profesional\ untuk\ berbagai\ keperluan.png');">
-                        <div class="promo-overlay"></div>
+                <!-- SIDEBAR -->
+                <div class="col-md-3">
+                    <div class="filter-sidebar">
 
-                        <div class="promo-content">
-                            <span class="badge bg-success mb-2">HARGA TERBAIK</span>
-                            <h2 class="fw-bold">Rp 1.000.000</h2>
-                            <p class="mb-3">Promo akhir tahun</p>
-                            <a href="#" class="btn btn-light btn-sm">Shop Now</a>
+                        <!-- FILTER: KATEGORI (SELECT) -->
+                        <div class="filter-group">
+                            <h6 class="filter-title">Kategori</h6>
+                            <select class="form-select form-select-sm">
+                                <option value="subwoofer" selected>Subwoofer (99)</option>
+                                <option value="full-range">Full Range (45)</option>
+                                <option value="speaker">Speaker (78)</option>
+                                <option value="karaoke">Karaoke (34)</option>
+                                <option value="mixer">Mixer</option>
+                                <option value="power-mixer">Power Mixer</option>
+                                <option value="amplifier">Amplifier</option>
+                                <option value="mixer-amplifier">Mixer Amplifier</option>
+                                <option value="power-amplifier">Power Amplifier</option>
+                            </select>
                         </div>
+
+                        <!-- FILTER: HARGA -->
+                        <div class="filter-group">
+                            <h6 class="filter-title">Harga</h6>
+                            <div class="price-range">
+                                <input type="number" class="form-control form-control-sm" placeholder="Min">
+                                <span>-</span>
+                                <input type="number" class="form-control form-control-sm" placeholder="Max">
+                            </div>
+                        </div>
+
+                        <!-- FILTER: STOK -->
+                        <div class="filter-group">
+                            <h6 class="filter-title">Ketersediaan</h6>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="stokTersedia" checked>
+                                <label class="form-check-label" for="stokTersedia">
+                                    Stok tersedia
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- FILTER: BRAND -->
+                        <div class="filter-group">
+                            <h6 class="filter-title">Brand</h6>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="audione">
+                                <label class="form-check-label" for="audione">Audione</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="digitalmusik">
+                                <label class="form-check-label" for="digitalmusik">Digital Musik</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="behringer">
+                                <label class="form-check-label" for="behringer">Behringer</label>
+                            </div>
+                        </div>
+                        <!-- FILTER: RATING -->
+                        <div class="filter-group">
+                            <h6 class="filter-title">Rating</h6>
+
+                            <label class="rating-item">
+                                <input type="radio" name="rating" value="5">
+                                <span class="stars">★★★★★</span>
+                                <small>5.0</small>
+                            </label>
+
+                            <label class="rating-item">
+                                <input type="radio" name="rating" value="4">
+                                <span class="stars">★★★★☆</span>
+                                <small>& Up</small>
+                            </label>
+
+                            <label class="rating-item">
+                                <input type="radio" name="rating" value="3">
+                                <span class="stars">★★★☆☆</span>
+                                <small>& Up</small>
+                            </label>
+
+                            <label class="rating-item">
+                                <input type="radio" name="rating" value="2">
+                                <span class="stars">★★☆☆☆</span>
+                                <small>& Up</small>
+                            </label>
+
+                            <label class="rating-item">
+                                <input type="radio" name="rating" value="1">
+                                <span class="stars">★☆☆☆☆</span>
+                                <small>& Up</small>
+                            </label>
+                        </div>
+
+
+                        <div class="d-block d-flex justify-content-center align-items-center">
+                            <!-- RESET -->
+                            <button class="btn btn-secondary btn-sm mt-2 mr-md-2">
+                                Reset
+                            </button>
+                            <button class="btn btn-outline-dark btn-sm mt-2">
+                                Terapkan
+                            </button>
+                        </div>
+
                     </div>
                 </div>
 
-                <!-- PROMO KANAN -->
-                <div class="col-md-6">
-                    <div class="promo-card promo-right"
-                        style="background-image: url('img/banner\ -\ Toko\ speaker\ profesional\ untuk\ berbagai\ keperluan.png');">
-                        <div class="promo-overlay"></div>
 
-                        <div class="promo-content text-end">
-                            <span class="badge bg-light text-dark mb-2">10% OFF</span>
-                            <p class="mb-0 fw-semibold">
-                                Dapatkan 10% lebih banyak di <br>
-                                <strong>Digital Musik Explore Now!</strong>
-                            </p>
+                <!-- PRODUCT GRID -->
+                <div class="col-md-9">
+                    <div class="row g-3">
+
+                        <!-- PRODUCT CARD -->
+                        <!-- CARD -->
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="product-card">
+                                <div class="card-img">
+                                    <span class="badge badge-red">15% OFF</span>
+                                    <span class="badge badge-blue">BEST SELLER</span>
+                                    <button class="wishlist">♡</button>
+
+                                    <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
+                                        class="img-fluid">
+                                </div>
+                                <div class="product-actions">
+                                    <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
+                                    <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
+                                    <button class="wishlist">♡</button>
+
+                                </div>
+
+                                <div class="card-body p-2">
+                                    <p class="product-title">Speaker Karaoke 12 inch</p>
+
+                                    <div class="rating">
+                                        ★★★★☆
+                                        <span class="text-muted">(12)</span>
+                                    </div>
+
+                                    <div class="price">
+                                        Rp 1,1jt
+                                        <span class="old">Rp 1,5jt</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="product-card">
+                                <div class="card-img">
+                                    <span class="badge badge-green">TOP RATED</span>
+                                    <button class="wishlist">♡</button>
+                                    <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
+                                        class="img-fluid">
+                                </div>
+                                <div class="product-actions">
+                                    <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
+                                    <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
+                                    <button class="wishlist">♡</button>
+
+                                </div>
+
+                                <div class="card-body p-2">
+                                    <p class="product-title">Speaker Karaoke 12 inch</p>
+                                    <div class="rating">★★★★★ <span>(8)</span></div>
+                                    <div class="price">Rp 1,1jt</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="product-card">
+                                <div class="card-img">
+                                    <span class="badge badge-red">15% OFF</span>
+                                    <span class="badge badge-blue">BEST SELLER</span>
+                                    <button class="wishlist">♡</button>
+
+                                    <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
+                                        class="img-fluid">
+                                </div>
+                                <div class="product-actions">
+                                    <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
+                                    <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
+                                    <button class="wishlist">♡</button>
+
+                                </div>
+
+                                <div class="card-body p-2">
+                                    <p class="product-title">Speaker Karaoke 12 inch</p>
+
+                                    <div class="rating">
+                                        ★★★★☆
+                                        <span class="text-muted">(12)</span>
+                                    </div>
+
+                                    <div class="price">
+                                        Rp 1,1jt
+                                        <span class="old">Rp 1,5jt</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="product-card">
+                                <div class="card-img">
+                                    <span class="badge badge-green">TOP RATED</span>
+                                    <button class="wishlist">♡</button>
+                                    <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
+                                        class="img-fluid">
+                                </div>
+                                <div class="product-actions">
+                                    <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
+                                    <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
+                                    <button class="wishlist">♡</button>
+
+                                </div>
+
+                                <div class="card-body p-2">
+                                    <p class="product-title">Speaker Karaoke 12 inch</p>
+                                    <div class="rating">★★★★★ <span>(8)</span></div>
+                                    <div class="price">Rp 1,1jt</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- CARD -->
+                        <div class="col-md-3 col-sm-4 col-6">
+
+                            <div class="product-card">
+                                <div class="card-img">
+                                    <span class="badge badge-red">15% OFF</span>
+                                    <span class="badge badge-blue">BEST SELLER</span>
+                                    <button class="wishlist">♡</button>
+
+                                    <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
+                                        class="img-fluid">
+                                </div>
+                                <div class="product-actions">
+                                    <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
+                                    <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
+                                    <button class="wishlist">♡</button>
+
+                                </div>
+
+                                <div class="card-body p-2">
+                                    <p class="product-title">Speaker Karaoke 12 inch</p>
+
+                                    <div class="rating">
+                                        ★★★★☆
+                                        <span class="text-muted">(12)</span>
+                                    </div>
+
+                                    <div class="price">
+                                        Rp 1,1jt
+                                        <span class="old">Rp 1,5jt</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+
+                            <div class="product-card">
+                                <div class="card-img">
+                                    <span class="badge badge-green">TOP RATED</span>
+                                    <button class="wishlist">♡</button>
+                                    <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
+                                        class="img-fluid">
+                                </div>
+                                <div class="product-actions">
+                                    <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
+                                    <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
+                                    <button class="wishlist">♡</button>
+
+                                </div>
+
+                                <div class="card-body p-2">
+                                    <p class="product-title">Speaker Karaoke 12 inch</p>
+                                    <div class="rating">★★★★★ <span>(8)</span></div>
+                                    <div class="price">Rp 1,1jt</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-6">
+
+                            <div class="product-card">
+                                <div class="card-img">
+                                    <span class="badge badge-red">15% OFF</span>
+                                    <span class="badge badge-blue">BEST SELLER</span>
+
+                                    <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
+                                        class="img-fluid">
+                                </div>
+                                <div class="product-actions">
+                                    <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
+                                    <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
+                                    <button class="wishlist">♡</button>
+
+                                </div>
+
+                                <div class="card-body p-2">
+                                    <p class="product-title">Speaker Karaoke 12 inch</p>
+
+                                    <div class="rating">
+                                        ★★★★☆
+                                        <span class="text-muted">(12)</span>
+                                    </div>
+
+                                    <div class="price">
+                                        Rp 1,1jt
+                                        <span class="old">Rp 1,5jt</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+
+                            <div class="product-card">
+                                <div class="card-img">
+                                    <span class="badge badge-green">TOP RATED</span>
+                                    <button class="wishlist">♡</button>
+                                    <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
+                                        class="img-fluid">
+                                </div>
+                                <div class="product-actions">
+                                    <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
+                                    <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
+                                    <button class="wishlist">♡</button>
+
+                                </div>
+
+                                <div class="card-body p-2">
+                                    <p class="product-title">Speaker Karaoke 12 inch</p>
+                                    <div class="rating">★★★★★ <span>(8)</span></div>
+                                    <div class="price">Rp 1,1jt</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- CARD -->
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="product-card">
+                                <div class="card-img">
+                                    <span class="badge badge-red">15% OFF</span>
+                                    <span class="badge badge-blue">BEST SELLER</span>
+                                    <button class="wishlist">♡</button>
+
+                                    <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
+                                        class="img-fluid">
+                                </div>
+                                <div class="product-actions">
+                                    <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
+                                    <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
+                                    <button class="wishlist">♡</button>
+
+                                </div>
+
+                                <div class="card-body p-2">
+                                    <p class="product-title">Speaker Karaoke 12 inch</p>
+
+                                    <div class="rating">
+                                        ★★★★☆
+                                        <span class="text-muted">(12)</span>
+                                    </div>
+
+                                    <div class="price">
+                                        Rp 1,1jt
+                                        <span class="old">Rp 1,5jt</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="product-card">
+                                <div class="card-img">
+                                    <span class="badge badge-green">TOP RATED</span>
+                                    <button class="wishlist">♡</button>
+                                    <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
+                                        class="img-fluid">
+                                </div>
+                                <div class="product-actions">
+                                    <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
+                                    <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
+                                    <button class="wishlist">♡</button>
+
+                                </div>
+
+                                <div class="card-body p-2">
+                                    <p class="product-title">Speaker Karaoke 12 inch</p>
+                                    <div class="rating">★★★★★ <span>(8)</span></div>
+                                    <div class="price">Rp 1,1jt</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="product-card">
+                                <div class="card-img">
+                                    <span class="badge badge-red">15% OFF</span>
+                                    <span class="badge badge-blue">BEST SELLER</span>
+                                    <button class="wishlist">♡</button>
+
+                                    <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
+                                        class="img-fluid">
+                                </div>
+                                <div class="product-actions">
+                                    <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
+                                    <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
+                                    <button class="wishlist">♡</button>
+
+                                </div>
+
+                                <div class="card-body p-2">
+                                    <p class="product-title">Speaker Karaoke 12 inch</p>
+
+                                    <div class="rating">
+                                        ★★★★☆
+                                        <span class="text-muted">(12)</span>
+                                    </div>
+
+                                    <div class="price">
+                                        Rp 1,1jt
+                                        <span class="old">Rp 1,5jt</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="product-card">
+                                <div class="card-img">
+                                    <span class="badge badge-green">TOP RATED</span>
+                                    <button class="wishlist">♡</button>
+                                    <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
+                                        class="img-fluid">
+                                </div>
+                                <div class="product-actions">
+                                    <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
+                                    <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
+                                    <button class="wishlist">♡</button>
+
+                                </div>
+
+                                <div class="card-body p-2">
+                                    <p class="product-title">Speaker Karaoke 12 inch</p>
+                                    <div class="rating">★★★★★ <span>(8)</span></div>
+                                    <div class="price">Rp 1,1jt</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- CARD -->
+                        <div class="col-md-3 col-sm-4 col-6">
+
+                            <div class="product-card">
+                                <div class="card-img">
+                                    <span class="badge badge-red">15% OFF</span>
+                                    <span class="badge badge-blue">BEST SELLER</span>
+                                    <button class="wishlist">♡</button>
+
+                                    <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
+                                        class="img-fluid">
+                                </div>
+                                <div class="product-actions">
+                                    <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
+                                    <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
+                                    <button class="wishlist">♡</button>
+
+                                </div>
+
+                                <div class="card-body p-2">
+                                    <p class="product-title">Speaker Karaoke 12 inch</p>
+
+                                    <div class="rating">
+                                        ★★★★☆
+                                        <span class="text-muted">(12)</span>
+                                    </div>
+
+                                    <div class="price">
+                                        Rp 1,1jt
+                                        <span class="old">Rp 1,5jt</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+
+                            <div class="product-card">
+                                <div class="card-img">
+                                    <span class="badge badge-green">TOP RATED</span>
+                                    <button class="wishlist">♡</button>
+                                    <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
+                                        class="img-fluid">
+                                </div>
+                                <div class="product-actions">
+                                    <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
+                                    <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
+                                    <button class="wishlist">♡</button>
+
+                                </div>
+
+                                <div class="card-body p-2">
+                                    <p class="product-title">Speaker Karaoke 12 inch</p>
+                                    <div class="rating">★★★★★ <span>(8)</span></div>
+                                    <div class="price">Rp 1,1jt</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-6">
+
+                            <div class="product-card">
+                                <div class="card-img">
+                                    <span class="badge badge-red">15% OFF</span>
+                                    <span class="badge badge-blue">BEST SELLER</span>
+
+                                    <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
+                                        class="img-fluid">
+                                </div>
+                                <div class="product-actions">
+                                    <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
+                                    <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
+                                    <button class="wishlist">♡</button>
+
+                                </div>
+
+                                <div class="card-body p-2">
+                                    <p class="product-title">Speaker Karaoke 12 inch</p>
+
+                                    <div class="rating">
+                                        ★★★★☆
+                                        <span class="text-muted">(12)</span>
+                                    </div>
+
+                                    <div class="price">
+                                        Rp 1,1jt
+                                        <span class="old">Rp 1,5jt</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+
+                            <div class="product-card">
+                                <div class="card-img">
+                                    <span class="badge badge-green">TOP RATED</span>
+                                    <button class="wishlist">♡</button>
+                                    <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
+                                        class="img-fluid">
+                                </div>
+                                <div class="product-actions">
+                                    <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
+                                    <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
+                                    <button class="wishlist">♡</button>
+
+                                </div>
+
+                                <div class="card-body p-2">
+                                    <p class="product-title">Speaker Karaoke 12 inch</p>
+                                    <div class="rating">★★★★★ <span>(8)</span></div>
+                                    <div class="price">Rp 1,1jt</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- pagination -->
+                        <div class="col-md-12">
+                            <div class="d-flex justify-content-center align-items-center gap-3">
+                                <button class="btn btn-outline-dark btn-sm">Previous</button>
+
+                                <div class="page-info text-center">
+                                    <span>Page 1 of 5</span>
+                                </div>
+
+                                <button class="btn btn-dark btn-sm">Next</button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-
 
         </div>
     </section>
@@ -362,7 +892,7 @@
     <section class="flash-sale-section py-5">
         <div class="container">
 
-            <h2 class="text-center fw-bold mb-4">Flash sale</h2>
+            <h2 class="text-center fw-bold mb-4">Rekomendasi</h2>
 
             <div class="position-relative overflow-hidden">
 
@@ -548,266 +1078,6 @@
 
         </div>
     </section>
-
-    <!-- suggest today -->
-    <section class="suggest-today py-5">
-        <div class="container">
-
-            <!-- HEADER -->
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <h2 class="fw-bold mb-0">Suggest Today</h2>
-                <a href="#" class="small text-decoration-none">VIEW ALL ›</a>
-            </div>
-
-            <!-- FILTER -->
-            <div class="d-flex gap-2 flex-wrap mb-4">
-                <button class="btn btn-primary btn-sm rounded-pill">Recommend For You</button>
-                <button class="btn btn-outline-secondary btn-sm rounded-pill">Top Best Seller</button>
-                <button class="btn btn-outline-secondary btn-sm rounded-pill">Top Rated</button>
-                <button class="btn btn-outline-secondary btn-sm rounded-pill">70% OFF</button>
-                <button class="btn btn-outline-secondary btn-sm rounded-pill">50% OFF</button>
-                <button class="btn btn-outline-secondary btn-sm rounded-pill">30% OFF</button>
-            </div>
-
-            <!-- PRODUCT GRID -->
-            <div class="row g-3">
-                <!-- CARD -->
-                <div class="col-md-3 col-sm-4 col-6">
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="badge badge-red">15% OFF</span>
-                            <span class="badge badge-blue">BEST SELLER</span>
-                            <button class="wishlist">♡</button>
-
-                            <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
-                                class="img-fluid">
-                        </div>
-                        <div class="product-actions">
-                            <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
-                            <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
-                            <button class="wishlist">♡</button>
-
-                        </div>
-
-                        <div class="card-body p-2">
-                            <p class="product-title">Speaker Karaoke 12 inch</p>
-
-                            <div class="rating">
-                                ★★★★☆
-                                <span class="text-muted">(12)</span>
-                            </div>
-
-                            <div class="price">
-                                Rp 1,1jt
-                                <span class="old">Rp 1,5jt</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-4 col-6">
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="badge badge-green">TOP RATED</span>
-                            <button class="wishlist">♡</button>
-                            <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
-                                class="img-fluid">
-                        </div>
-                        <div class="product-actions">
-                            <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
-                            <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
-                            <button class="wishlist">♡</button>
-
-                        </div>
-
-                        <div class="card-body p-2">
-                            <p class="product-title">Speaker Karaoke 12 inch</p>
-                            <div class="rating">★★★★★ <span>(8)</span></div>
-                            <div class="price">Rp 1,1jt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-6">
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="badge badge-red">15% OFF</span>
-                            <span class="badge badge-blue">BEST SELLER</span>
-                            <button class="wishlist">♡</button>
-
-                            <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
-                                class="img-fluid">
-                        </div>
-                        <div class="product-actions">
-                            <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
-                            <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
-                            <button class="wishlist">♡</button>
-
-                        </div>
-
-                        <div class="card-body p-2">
-                            <p class="product-title">Speaker Karaoke 12 inch</p>
-
-                            <div class="rating">
-                                ★★★★☆
-                                <span class="text-muted">(12)</span>
-                            </div>
-
-                            <div class="price">
-                                Rp 1,1jt
-                                <span class="old">Rp 1,5jt</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-4 col-6">
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="badge badge-green">TOP RATED</span>
-                            <button class="wishlist">♡</button>
-                            <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
-                                class="img-fluid">
-                        </div>
-                        <div class="product-actions">
-                            <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
-                            <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
-                            <button class="wishlist">♡</button>
-
-                        </div>
-
-                        <div class="card-body p-2">
-                            <p class="product-title">Speaker Karaoke 12 inch</p>
-                            <div class="rating">★★★★★ <span>(8)</span></div>
-                            <div class="price">Rp 1,1jt</div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- CARD -->
-                <div class="col-md-3 col-sm-4 col-6">
-
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="badge badge-red">15% OFF</span>
-                            <span class="badge badge-blue">BEST SELLER</span>
-                            <button class="wishlist">♡</button>
-
-                            <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
-                                class="img-fluid">
-                        </div>
-                        <div class="product-actions">
-                            <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
-                            <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
-                            <button class="wishlist">♡</button>
-
-                        </div>
-
-                        <div class="card-body p-2">
-                            <p class="product-title">Speaker Karaoke 12 inch</p>
-
-                            <div class="rating">
-                                ★★★★☆
-                                <span class="text-muted">(12)</span>
-                            </div>
-
-                            <div class="price">
-                                Rp 1,1jt
-                                <span class="old">Rp 1,5jt</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-md-3 col-sm-4 col-6">
-
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="badge badge-green">TOP RATED</span>
-                            <button class="wishlist">♡</button>
-                            <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
-                                class="img-fluid">
-                        </div>
-                        <div class="product-actions">
-                            <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
-                            <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
-                            <button class="wishlist">♡</button>
-
-                        </div>
-
-                        <div class="card-body p-2">
-                            <p class="product-title">Speaker Karaoke 12 inch</p>
-                            <div class="rating">★★★★★ <span>(8)</span></div>
-                            <div class="price">Rp 1,1jt</div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md-3 col-sm-4 col-6">
-
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="badge badge-red">15% OFF</span>
-                            <span class="badge badge-blue">BEST SELLER</span>
-
-                            <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
-                                class="img-fluid">
-                        </div>
-                        <div class="product-actions">
-                            <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
-                            <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
-                            <button class="wishlist">♡</button>
-
-                        </div>
-
-                        <div class="card-body p-2">
-                            <p class="product-title">Speaker Karaoke 12 inch</p>
-
-                            <div class="rating">
-                                ★★★★☆
-                                <span class="text-muted">(12)</span>
-                            </div>
-
-                            <div class="price">
-                                Rp 1,1jt
-                                <span class="old">Rp 1,5jt</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-md-3 col-sm-4 col-6">
-
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="badge badge-green">TOP RATED</span>
-                            <button class="wishlist">♡</button>
-                            <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
-                                class="img-fluid">
-                        </div>
-                        <div class="product-actions">
-                            <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
-                            <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
-                            <button class="wishlist">♡</button>
-
-                        </div>
-
-                        <div class="card-body p-2">
-                            <p class="product-title">Speaker Karaoke 12 inch</p>
-                            <div class="rating">★★★★★ <span>(8)</span></div>
-                            <div class="price">Rp 1,1jt</div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
     <!-- whats new -->
     <section class="whats-new py-5">
         <div class="container">

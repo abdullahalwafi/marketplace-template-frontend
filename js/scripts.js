@@ -75,3 +75,114 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setInterval(slideNext, 3000);
 });
+const preview = document.getElementById("mainPreview");
+
+preview.addEventListener("mouseenter", () => {
+  preview.classList.add("zoom-active");
+});
+
+preview.addEventListener("mouseleave", () => {
+  preview.classList.remove("zoom-active");
+});
+
+// MOBILE TAP ZOOM
+preview.addEventListener("click", () => {
+  preview.classList.toggle("zoom-active");
+});
+let startX = 0;
+let endX = 0;
+
+preview.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+});
+
+preview.addEventListener("touchmove", (e) => {
+  endX = e.touches[0].clientX;
+});
+
+preview.addEventListener("touchend", () => {
+  if (startX - endX > 50) {
+    slideNextThumb();
+  }
+  if (endX - startX > 50) {
+    slidePrevThumb();
+  }
+});
+
+function slideNextThumb() {
+  const active = document.querySelector(".thumb.active");
+  const next = active.nextElementSibling;
+  if (next && next.classList.contains("thumb")) {
+    next.click();
+  }
+}
+
+function slidePrevThumb() {
+  const active = document.querySelector(".thumb.active");
+  const prev = active.previousElementSibling;
+  if (prev && prev.classList.contains("thumb")) {
+    prev.click();
+  }
+}
+const thumbs = document.querySelectorAll(".thumb");
+const thumbList = document.getElementById("thumbList");
+
+thumbs.forEach((thumb) => {
+  thumb.addEventListener("click", () => {
+    thumbs.forEach((t) => t.classList.remove("active"));
+    thumb.classList.add("active");
+
+    const type = thumb.dataset.type;
+    const src = thumb.dataset.src;
+
+    // RESET PREVIEW
+    preview.innerHTML = "";
+
+    if (type === "image") {
+      const img = document.createElement("img");
+      img.src = src;
+      img.className = "img-fluid";
+      preview.appendChild(img);
+    }
+
+    if (type === "video") {
+      const video = document.createElement("video");
+      video.src = src;
+      video.controls = true;
+      video.autoplay = true;
+      video.className = "w-100";
+      preview.appendChild(video);
+    }
+
+    if (type === "youtube") {
+      const iframe = document.createElement("iframe");
+      iframe.src = src;
+      iframe.width = "100%";
+      iframe.height = "360";
+      iframe.allow =
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+      iframe.allowFullscreen = true;
+      preview.appendChild(iframe);
+    }
+  });
+});
+
+// SCROLL THUMB
+document.querySelector(".thumb-nav.next").onclick = () => {
+  thumbList.scrollLeft += 80;
+};
+document.querySelector(".thumb-nav.prev").onclick = () => {
+  thumbList.scrollLeft -= 80;
+};
+document.querySelectorAll(".qty-control").forEach((box) => {
+  const input = box.querySelector("input");
+  const btns = box.querySelectorAll(".qty-btn");
+
+  btns[0].onclick = () => {
+    if (input.value > 1) input.value--;
+  };
+
+  btns[1].onclick = () => {
+    input.value++;
+  };
+});

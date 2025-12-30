@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Digital Musik - Toko Speaker Profesional</title>
+    <title>Detail Produk - Digital Musik - Toko Speaker Profesional</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -224,145 +224,306 @@
         </div>
     </header>
 
-    <!-- banner -->
-    <section id="banner">
-        <div class="row">
-            <div class="col-md-12">
-                <div id="carouselExampleIndicators" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+    <div class="container">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Profile</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="container my-5">
+        <div class="row g-4">
+
+            <!-- SIDEBAR TAB -->
+            <div class="col-md-3">
+                <div class="account-sidebar">
+
+                    <!-- PROFILE -->
+                    <div class="profile-box text-center">
+                        <img src="img/user - Toko speaker profesional untuk berbagai keperluan.png" class="profile-img">
+                        <h6 class="mt-2 mb-0">Mark Cole</h6>
+                        <small class="text-muted">digitalmusik@gmail.com</small>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item">
-                            <img src="img/banner 2 - Toko speaker profesional untuk berbagai keperluan.png"
-                                class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item active">
-                            <a href="https://cek.digitalmusik.id/" target="_blank">
-                                <img src="img/banner - Toko speaker profesional untuk berbagai keperluan.png"
-                                    class="d-block w-100">
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/banner 3 - Toko speaker profesional untuk berbagai keperluan.png"
-                                class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+
+                    <!-- TAB BUTTON -->
+                    <button class="tab-btn active" data-tab="account">
+                        👤 Account Info
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
+
+                    <button class="tab-btn" data-tab="orders">
+                        📦 Orderan Saya
+                    </button>
+
+                    <button class="tab-btn" data-tab="address">
+                        📍 Alamat
+                    </button>
+
+                    <button class="tab-btn" data-tab="password">
+                        🔒 Ganti Password
                     </button>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- popular sound -->
-    <section class="popular-sound py-5">
-        <div class="container">
+            <!-- CONTENT -->
+            <div class="col-md-9">
+                <div class="account-content">
 
-            <!-- TITLE -->
-            <h2 class="text-center mb-4">
-                <span class="text-primary fw-bold">Sound system populer</span> untuk anda
-            </h2>
+                    <!-- TAB: ACCOUNT INFO -->
+                    <div class="tab-content active" id="account">
+                        <h5 class="fw-bold mb-4">Akun Info</h5>
 
-            <!-- ICON CATEGORY -->
-            <div class="d-flex justify-content-center gap-4 flex-wrap mb-5">
-                <div class="icon-item active">
-                    <div class="icon-circle bg-danger text-white">new</div>
-                    <small class="mt-2 d-block fw-semibold">Baru datang</small>
-                </div>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Nama Depan</label>
+                                <input class="form-control" value="Mark">
+                            </div>
 
-                <div class="icon-item">
-                    <div class="icon-circle"><i class="bi bi-disc"></i></div>
-                    <small>Subwoofer</small>
-                </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Nama Belakang</label>
+                                <input class="form-control" value="Cole">
+                            </div>
 
-                <div class="icon-item">
-                    <div class="icon-circle"><i class="bi bi-sliders"></i></div>
-                    <small>Mixer</small>
-                </div>
+                            <div class="col-md-12">
+                                <label class="form-label">Email</label>
+                                <input class="form-control" value="digitalmusik@gmail.com">
+                            </div>
 
-                <div class="icon-item">
-                    <div class="icon-circle"><i class="bi bi-speaker"></i></div>
-                    <small>Full Range</small>
-                </div>
+                            <div class="col-md-12">
+                                <label class="form-label">Nomor HP</label>
+                                <input class="form-control" value="+628123456789">
+                            </div>
+                        </div>
 
-                <div class="icon-item">
-                    <div class="icon-circle"><i class="bi bi-soundwave"></i></div>
-                    <small>Power Amplifier</small>
-                </div>
+                        <button class="btn btn-success mt-4">
+                            Simpan Perubahan
+                        </button>
+                    </div>
 
-                <div class="icon-item">
-                    <div class="icon-circle"><i class="bi bi-music-note-list"></i></div>
-                    <small>Power Mixer</small>
-                </div>
+                    <!-- TAB: ORDERS -->
+                    <div class="tab-content" id="orders">
+                        <h5 class="fw-bold mb-3">Orderan Saya</h5>
 
-                <div class="icon-item">
-                    <div class="icon-circle"><i class="bi bi-mic"></i></div>
-                    <small>Speaker Karaoke</small>
-                </div>
+                        <!-- ORDER STATUS TAB -->
+                        <div class="order-tabs">
+                            <button class="order-tab active" data-status="all">🔥 Semua</button>
+                            <button class="order-tab" data-status="pending">⏳ Menunggu Pembayaran</button>
+                            <button class="order-tab" data-status="process">⚙️ Diproses</button>
+                            <button class="order-tab" data-status="shipped">🚚 Dikirim</button>
+                            <button class="order-tab" data-status="done">✅ Selesai</button>
+                            <button class="order-tab" data-status="cancel">❌ Dibatalkan</button>
+                        </div>
 
-                <div class="icon-item">
-                    <div class="icon-circle"><i class="bi bi-sliders"></i></div>
-                    <small>Amplifier Mixer</small>
+                        <!-- ORDER LIST -->
+                        <!-- ORDER LIST -->
+                        <div class="order-list">
+
+                            <!-- ORDER CARD -->
+                            <div class="order-card" data-status="process">
+
+                                <!-- HEADER -->
+                                <div class="order-header">
+                                    <strong>Order #ORD12345</strong>
+                                    <span class="badge bg-warning text-dark">Diproses</span>
+                                </div>
+
+                                <!-- PRODUCT LIST -->
+                                <div class="order-products">
+
+                                    <div class="order-product">
+                                        <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png">
+                                        <div>
+                                            <p class="mb-0 fw-semibold">Subwoofer GX 115 Inch</p>
+                                            <small class="text-muted">15 Inch • Pasif • Qty 1</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="order-product">
+                                        <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png">
+                                        <div>
+                                            <p class="mb-0 fw-semibold">Speaker GX 115 Inch</p>
+                                            <small class="text-muted">15 Inch • Aktif • Qty 1</small>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- FOOTER -->
+                                <div class="order-footer">
+                                    <div>
+                                        <small class="text-muted">20 Mei 2025</small><br>
+                                        <strong>Total: Rp 1.250.000</strong>
+                                    </div>
+
+                                    <div class="order-actions">
+                                        <a href="detail-orders.html" class="btn btn-outline-secondary btn-sm">
+                                            Detail
+                                        </a>
+                                        <button class="btn btn-primary btn-sm">
+                                            Lacak
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- ORDER CARD : PENDING -->
+                            <div class="order-card" data-status="pending">
+
+                                <div class="order-header">
+                                    <strong>Order #ORD12346</strong>
+                                    <span class="badge bg-secondary">Menunggu Pembayaran</span>
+                                </div>
+
+                                <div class="order-products">
+                                    <div class="order-product">
+                                        <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png">
+                                        <div>
+                                            <p class="mb-0 fw-semibold">Line Array Series</p>
+                                            <small class="text-muted">2 × 8 Inch • Qty 1</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="order-footer">
+                                    <div>
+                                        <small class="text-muted">21 Mei 2025</small><br>
+                                        <strong>Total: Rp 450.000</strong>
+                                    </div>
+
+                                    <div class="order-actions">
+                                        <button class="btn btn-success btn-sm">
+                                            Bayar Sekarang
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TAB: ADDRESS -->
+                    <div class="tab-content" id="address">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="fw-bold mb-0">Alamat Saya</h5>
+                            <button class="btn btn-outline-success btn-sm" id="btnAddAddress">
+                                + Tambah Alamat
+                            </button>
+                        </div>
+
+                        <!-- LIST ALAMAT -->
+                        <div class="address-list">
+
+                            <div class="address-card">
+                                <div class="d-flex justify-content-between">
+                                    <strong>🏠 Rumah</strong>
+                                    <span class="badge bg-success">Utama</span>
+                                </div>
+                                <p class="mb-1 mt-1">
+                                    Jl. Pinangsia Raya No.25, Jakarta Barat
+                                </p>
+                                <small class="text-muted">(+62) 812-3456-789</small>
+                            </div>
+
+                        </div>
+
+                        <!-- FORM TAMBAH ALAMAT -->
+                        <div class="address-form" id="addressForm">
+                            <h6 class="fw-bold mb-3">Tambah Alamat Baru</h6>
+
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Label Alamat</label>
+                                    <input class="form-control" placeholder="Contoh: Rumah, Kantor">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Nama Penerima</label>
+                                    <input class="form-control" placeholder="Nama lengkap">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label class="form-label">Nomor Handphone</label>
+                                    <input class="form-control" placeholder="+62...">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label class="form-label">Alamat Lengkap</label>
+                                    <textarea class="form-control" rows="3"
+                                        placeholder="Nama jalan, nomor rumah, patokan"></textarea>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Kota</label>
+                                    <input class="form-control" placeholder="Jakarta Barat">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Kode Pos</label>
+                                    <input class="form-control" placeholder="11110">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label class="form-check">
+                                        <input type="checkbox" class="form-check-input">
+                                        Jadikan alamat utama
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="mt-3 d-flex gap-2">
+                                <button class="btn btn-success btn-sm">
+                                    Simpan Alamat
+                                </button>
+                                <button class="btn btn-light btn-sm" id="btnCancelAddress">
+                                    Batal
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB: PASSWORD -->
+                    <div class="tab-content" id="password">
+                        <h5 class="fw-bold mb-3">Ganti Password</h5>
+
+                        <div class="mb-2">
+                            <label class="form-label">Password Lama</label>
+                            <input class="form-control" placeholder="Password Lama">
+                        </div>
+
+                        <div class="mb-2">
+                            <label class="form-label">Password Baru</label>
+                            <input class="form-control" placeholder="Password Baru">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Konfirmasi Password</label>
+                            <input class="form-control" placeholder="Konfirmasi Password">
+                        </div>
+
+                        <button class="btn btn-success">
+                            Update Password
+                        </button>
+                    </div>
+
                 </div>
             </div>
 
-            <!-- PROMO BANNER -->
-            <div class="row g-4">
-                <!-- PROMO KIRI -->
-                <div class="col-md-6">
-                    <div class="promo-card promo-left"
-                        style="background-image: url('img/banner\ 3\ -\ Toko\ speaker\ profesional\ untuk\ berbagai\ keperluan.png');">
-                        <div class="promo-overlay"></div>
-
-                        <div class="promo-content">
-                            <span class="badge bg-success mb-2">HARGA TERBAIK</span>
-                            <h2 class="fw-bold">Rp 1.000.000</h2>
-                            <p class="mb-3">Promo akhir tahun</p>
-                            <a href="#" class="btn btn-light btn-sm">Shop Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PROMO KANAN -->
-                <div class="col-md-6">
-                    <div class="promo-card promo-right"
-                        style="background-image: url('img/banner\ -\ Toko\ speaker\ profesional\ untuk\ berbagai\ keperluan.png');">
-                        <div class="promo-overlay"></div>
-
-                        <div class="promo-content text-end">
-                            <span class="badge bg-light text-dark mb-2">10% OFF</span>
-                            <p class="mb-0 fw-semibold">
-                                Dapatkan 10% lebih banyak di <br>
-                                <strong>Digital Musik Explore Now!</strong>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
         </div>
-    </section>
+    </div>
+
+
 
     <!-- flash sale -->
     <section class="flash-sale-section py-5">
         <div class="container">
 
-            <h2 class="text-center fw-bold mb-4">Flash sale</h2>
+            <h2 class="text-center fw-bold mb-4">Rekomendasi</h2>
 
             <div class="position-relative overflow-hidden">
 
@@ -548,266 +709,6 @@
 
         </div>
     </section>
-
-    <!-- suggest today -->
-    <section class="suggest-today py-5">
-        <div class="container">
-
-            <!-- HEADER -->
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <h2 class="fw-bold mb-0">Suggest Today</h2>
-                <a href="#" class="small text-decoration-none">VIEW ALL ›</a>
-            </div>
-
-            <!-- FILTER -->
-            <div class="d-flex gap-2 flex-wrap mb-4">
-                <button class="btn btn-primary btn-sm rounded-pill">Recommend For You</button>
-                <button class="btn btn-outline-secondary btn-sm rounded-pill">Top Best Seller</button>
-                <button class="btn btn-outline-secondary btn-sm rounded-pill">Top Rated</button>
-                <button class="btn btn-outline-secondary btn-sm rounded-pill">70% OFF</button>
-                <button class="btn btn-outline-secondary btn-sm rounded-pill">50% OFF</button>
-                <button class="btn btn-outline-secondary btn-sm rounded-pill">30% OFF</button>
-            </div>
-
-            <!-- PRODUCT GRID -->
-            <div class="row g-3">
-                <!-- CARD -->
-                <div class="col-md-3 col-sm-4 col-6">
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="badge badge-red">15% OFF</span>
-                            <span class="badge badge-blue">BEST SELLER</span>
-                            <button class="wishlist">♡</button>
-
-                            <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
-                                class="img-fluid">
-                        </div>
-                        <div class="product-actions">
-                            <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
-                            <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
-                            <button class="wishlist">♡</button>
-
-                        </div>
-
-                        <div class="card-body p-2">
-                            <p class="product-title">Speaker Karaoke 12 inch</p>
-
-                            <div class="rating">
-                                ★★★★☆
-                                <span class="text-muted">(12)</span>
-                            </div>
-
-                            <div class="price">
-                                Rp 1,1jt
-                                <span class="old">Rp 1,5jt</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-4 col-6">
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="badge badge-green">TOP RATED</span>
-                            <button class="wishlist">♡</button>
-                            <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
-                                class="img-fluid">
-                        </div>
-                        <div class="product-actions">
-                            <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
-                            <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
-                            <button class="wishlist">♡</button>
-
-                        </div>
-
-                        <div class="card-body p-2">
-                            <p class="product-title">Speaker Karaoke 12 inch</p>
-                            <div class="rating">★★★★★ <span>(8)</span></div>
-                            <div class="price">Rp 1,1jt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-6">
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="badge badge-red">15% OFF</span>
-                            <span class="badge badge-blue">BEST SELLER</span>
-                            <button class="wishlist">♡</button>
-
-                            <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
-                                class="img-fluid">
-                        </div>
-                        <div class="product-actions">
-                            <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
-                            <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
-                            <button class="wishlist">♡</button>
-
-                        </div>
-
-                        <div class="card-body p-2">
-                            <p class="product-title">Speaker Karaoke 12 inch</p>
-
-                            <div class="rating">
-                                ★★★★☆
-                                <span class="text-muted">(12)</span>
-                            </div>
-
-                            <div class="price">
-                                Rp 1,1jt
-                                <span class="old">Rp 1,5jt</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-4 col-6">
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="badge badge-green">TOP RATED</span>
-                            <button class="wishlist">♡</button>
-                            <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
-                                class="img-fluid">
-                        </div>
-                        <div class="product-actions">
-                            <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
-                            <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
-                            <button class="wishlist">♡</button>
-
-                        </div>
-
-                        <div class="card-body p-2">
-                            <p class="product-title">Speaker Karaoke 12 inch</p>
-                            <div class="rating">★★★★★ <span>(8)</span></div>
-                            <div class="price">Rp 1,1jt</div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- CARD -->
-                <div class="col-md-3 col-sm-4 col-6">
-
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="badge badge-red">15% OFF</span>
-                            <span class="badge badge-blue">BEST SELLER</span>
-                            <button class="wishlist">♡</button>
-
-                            <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
-                                class="img-fluid">
-                        </div>
-                        <div class="product-actions">
-                            <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
-                            <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
-                            <button class="wishlist">♡</button>
-
-                        </div>
-
-                        <div class="card-body p-2">
-                            <p class="product-title">Speaker Karaoke 12 inch</p>
-
-                            <div class="rating">
-                                ★★★★☆
-                                <span class="text-muted">(12)</span>
-                            </div>
-
-                            <div class="price">
-                                Rp 1,1jt
-                                <span class="old">Rp 1,5jt</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-md-3 col-sm-4 col-6">
-
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="badge badge-green">TOP RATED</span>
-                            <button class="wishlist">♡</button>
-                            <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
-                                class="img-fluid">
-                        </div>
-                        <div class="product-actions">
-                            <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
-                            <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
-                            <button class="wishlist">♡</button>
-
-                        </div>
-
-                        <div class="card-body p-2">
-                            <p class="product-title">Speaker Karaoke 12 inch</p>
-                            <div class="rating">★★★★★ <span>(8)</span></div>
-                            <div class="price">Rp 1,1jt</div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md-3 col-sm-4 col-6">
-
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="badge badge-red">15% OFF</span>
-                            <span class="badge badge-blue">BEST SELLER</span>
-
-                            <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
-                                class="img-fluid">
-                        </div>
-                        <div class="product-actions">
-                            <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
-                            <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
-                            <button class="wishlist">♡</button>
-
-                        </div>
-
-                        <div class="card-body p-2">
-                            <p class="product-title">Speaker Karaoke 12 inch</p>
-
-                            <div class="rating">
-                                ★★★★☆
-                                <span class="text-muted">(12)</span>
-                            </div>
-
-                            <div class="price">
-                                Rp 1,1jt
-                                <span class="old">Rp 1,5jt</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-md-3 col-sm-4 col-6">
-
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="badge badge-green">TOP RATED</span>
-                            <button class="wishlist">♡</button>
-                            <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png"
-                                class="img-fluid">
-                        </div>
-                        <div class="product-actions">
-                            <a href="detail-produk.html" class="btn btn-outline-dark btn-sm">Cek Detail</a>
-                            <a href="keranjang.html" class="btn btn-dark btn-sm">+ Keranjang</a>
-                            <button class="wishlist">♡</button>
-
-                        </div>
-
-                        <div class="card-body p-2">
-                            <p class="product-title">Speaker Karaoke 12 inch</p>
-                            <div class="rating">★★★★★ <span>(8)</span></div>
-                            <div class="price">Rp 1,1jt</div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
     <!-- whats new -->
     <section class="whats-new py-5">
         <div class="container">
@@ -951,7 +852,6 @@
         </div>
     </section>
 
-
     <!-- footer -->
     <footer class="footer mt-5 pt-5">
         <div class="container">
@@ -1076,6 +976,52 @@
     <script src="js/scripts.js"></script>
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tabs = document.querySelectorAll('.tab-btn');
+        const contents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabs.forEach(b => b.classList.remove('active'));
+                contents.forEach(c => c.classList.remove('active'));
+
+                btn.classList.add('active');
+                document.getElementById(btn.dataset.tab).classList.add('active');
+            });
+        });
+        const orderTabs = document.querySelectorAll('.order-tab');
+        const orders = document.querySelectorAll('.order-card');
+
+        orderTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                orderTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                const status = tab.dataset.status;
+
+                orders.forEach(order => {
+                    if (status === 'all' || order.dataset.status === status) {
+                        order.style.display = 'block';
+                    } else {
+                        order.style.display = 'none';
+                    }
+                });
+            });
+        });
+        const btnAdd = document.getElementById('btnAddAddress');
+        const btnCancel = document.getElementById('btnCancelAddress');
+        const form = document.getElementById('addressForm');
+
+        btnAdd.addEventListener('click', () => {
+            form.style.display = 'block';
+            btnAdd.style.display = 'none';
+        });
+
+        btnCancel.addEventListener('click', () => {
+            form.style.display = 'none';
+            btnAdd.style.display = 'inline-block';
+        });
+    </script>
 </body>
 
 </html>
