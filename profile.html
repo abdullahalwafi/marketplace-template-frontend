@@ -233,6 +233,7 @@
             </ol>
         </nav>
     </div>
+
     <div class="container my-5">
         <div class="row g-4">
 
@@ -316,37 +317,93 @@
                         </div>
 
                         <!-- ORDER LIST -->
+                        <!-- ORDER LIST -->
                         <div class="order-list">
 
                             <!-- ORDER CARD -->
                             <div class="order-card" data-status="process">
+
+                                <!-- HEADER -->
                                 <div class="order-header">
-                                    <strong>#ORD12345</strong>
+                                    <strong>Order #ORD12345</strong>
                                     <span class="badge bg-warning text-dark">Diproses</span>
                                 </div>
-                                <p class="text-muted mb-1">2 Produk • Rp 1.250.000</p>
-                                <small class="text-muted">20 Mei 2025</small>
+
+                                <!-- PRODUCT LIST -->
+                                <div class="order-products">
+
+                                    <div class="order-product">
+                                        <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png">
+                                        <div>
+                                            <p class="mb-0 fw-semibold">Subwoofer GX 115 Inch</p>
+                                            <small class="text-muted">15 Inch • Pasif • Qty 1</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="order-product">
+                                        <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png">
+                                        <div>
+                                            <p class="mb-0 fw-semibold">Speaker GX 115 Inch</p>
+                                            <small class="text-muted">15 Inch • Aktif • Qty 1</small>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- FOOTER -->
+                                <div class="order-footer">
+                                    <div>
+                                        <small class="text-muted">20 Mei 2025</small><br>
+                                        <strong>Total: Rp 1.250.000</strong>
+                                    </div>
+
+                                    <div class="order-actions">
+                                        <a href="detail-orders.html" class="btn btn-outline-secondary btn-sm">
+                                            Detail
+                                        </a>
+                                        <button class="btn btn-primary btn-sm">
+                                            Lacak
+                                        </button>
+                                    </div>
+                                </div>
+
                             </div>
 
+                            <!-- ORDER CARD : PENDING -->
                             <div class="order-card" data-status="pending">
+
                                 <div class="order-header">
-                                    <strong>#ORD12346</strong>
+                                    <strong>Order #ORD12346</strong>
                                     <span class="badge bg-secondary">Menunggu Pembayaran</span>
                                 </div>
-                                <p class="text-muted mb-1">1 Produk • Rp 450.000</p>
-                                <small class="text-muted">21 Mei 2025</small>
-                            </div>
 
-                            <div class="order-card" data-status="done">
-                                <div class="order-header">
-                                    <strong>#ORD12347</strong>
-                                    <span class="badge bg-success">Selesai</span>
+                                <div class="order-products">
+                                    <div class="order-product">
+                                        <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png">
+                                        <div>
+                                            <p class="mb-0 fw-semibold">Line Array Series</p>
+                                            <small class="text-muted">2 × 8 Inch • Qty 1</small>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p class="text-muted mb-1">3 Produk • Rp 2.100.000</p>
-                                <small class="text-muted">18 Mei 2025</small>
+
+                                <div class="order-footer">
+                                    <div>
+                                        <small class="text-muted">21 Mei 2025</small><br>
+                                        <strong>Total: Rp 450.000</strong>
+                                    </div>
+
+                                    <div class="order-actions">
+                                        <button class="btn btn-success btn-sm">
+                                            Bayar Sekarang
+                                        </button>
+                                    </div>
+                                </div>
+
                             </div>
 
                         </div>
+
                     </div>
 
 
@@ -794,7 +851,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- footer -->
     <footer class="footer mt-5 pt-5">

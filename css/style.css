@@ -1412,21 +1412,62 @@
 /* ORDER CARD */
 .order-card {
   border: 1px solid #eee;
-  border-radius: 12px;
+  border-radius: 14px;
   padding: 14px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+  background: #fff;
   transition: 0.2s;
 }
 
 .order-card:hover {
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
 }
 
 .order-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 12px;
 }
+
+/* PRODUCTS */
+.order-products {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 12px 0;
+  margin-bottom: 12px;
+}
+
+.order-product {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.order-product:last-child {
+  margin-bottom: 0;
+}
+
+.order-product img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+/* FOOTER */
+.order-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-actions {
+  display: flex;
+  gap: 8px;
+}
+
 .order-tracking {
   display: flex;
   justify-content: space-between;
