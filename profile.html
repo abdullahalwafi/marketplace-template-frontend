@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Keranjang Belanja - Digital Musik - Toko Speaker Profesional</title>
+    <title>Detail Produk - Digital Musik - Toko Speaker Profesional</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -229,198 +229,237 @@
             aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Keranjang</li>
+                <li class="breadcrumb-item active" aria-current="page">Profile</li>
             </ol>
         </nav>
     </div>
-
-    <div class="container my-4">
+    <div class="container my-5">
         <div class="row g-4">
 
-            <!-- LEFT : CART LIST -->
-            <div class="col-md-8">
+            <!-- SIDEBAR TAB -->
+            <div class="col-md-3">
+                <div class="account-sidebar">
 
-                <h4 class="fw-bold mb-3">Keranjang Belanja (4)</h4>
-
-                <!-- SELECT ALL -->
-                <div class="cart-header">
-                    <label>
-                        <input type="checkbox" checked>
-                        <strong>Pilih Semua</strong> <span class="text-muted">(4 produk terpilih)</span>
-                    </label>
-
-                    <div class="cart-actions">
-                        <a href="#">💾 Simpan Keranjang</a>
-                        <a href="#" class="text-danger">🗑 Hapus Semua</a>
-                    </div>
-                </div>
-
-                <!-- ITEM -->
-                <div class="cart-item">
-                    <input type="checkbox" checked>
-
-                    <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png" class="cart-img">
-
-                    <div class="cart-info">
-                        <h6>DEVIATE Helm Sepeda Bicycle Mountain Bike Helmet</h6>
-                        <small class="text-muted">7CSFERR • 1 kg</small>
-
-                        <div class="price">
-                            Rp111.000
-                            <span>Rp152.000</span>
-                        </div>
-
-                        <a href="#" class="stock-link">Lihat ketersediaan stok</a>
+                    <!-- PROFILE -->
+                    <div class="profile-box text-center">
+                        <img src="img/user - Toko speaker profesional untuk berbagai keperluan.png" class="profile-img">
+                        <h6 class="mt-2 mb-0">Mark Cole</h6>
+                        <small class="text-muted">digitalmusik@gmail.com</small>
                     </div>
 
-                    <div class="cart-qty">
-                        <button>-</button>
-                        <input type="number" value="1">
-                        <button>+</button>
-                    </div>
-
-                    <div class="cart-total">Rp111.000</div>
-
-                    <div class="cart-icons">
-                        🗑 <span class="d-md-none d-block">hapus</span>
-                    </div>
-                </div>
-
-                <!-- DUPLIKASI ITEM -->
-                <div class="cart-item">
-                    <input type="checkbox" checked>
-
-                    <img src="img/produk - Toko speaker profesional untuk berbagai keperluan.png" class="cart-img">
-
-                    <div class="cart-info">
-                        <h6>Hasei Baskom Mangkok Stainless Steel</h6>
-                        <small class="text-muted">7CHKQSV • 0.5 kg</small>
-
-                        <div class="price">
-                            Rp17.800
-                            <span>Rp31.000</span>
-                        </div>
-
-                        <a href="#" class="stock-link">Lihat ketersediaan stok</a>
-                    </div>
-
-                    <div class="cart-qty">
-                        <button>-</button>
-                        <input type="number" value="1">
-                        <button>+</button>
-                    </div>
-
-                    <div class="cart-total">Rp17.800</div>
-
-                    <div class="cart-icons">
-                        🗑<span class="d-md-none d-block">hapus</span>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- RIGHT : SUMMARY -->
-            <div class="col-md-4">
-                <div class="cart-summary">
-
-                    <!-- 1. DETAIL PENGIRIMAN -->
-                    <div class="summary-section">
-                        <h6 class="summary-title">Detail Pengiriman</h6>
-
-                        <div class="summary-row address-row">
-                            <span>Alamat</span>
-                            <strong>Jln Mohnoh Nur Kp Banyusari RT.001/008 No. 37 DS Leuwimekar KC Leuwiliang Kab Bogor
-                                Jawa barat 16640</strong>
-
-                            <a href="#" class="edit-link">
-                                <small><i class="bi bi-pencil"></i> Ubah alamat </small>
-                            </a>
-                        </div>
-
-                        <div class="summary-row">
-                            <span>Kurir</span>
-                            <select name="kurir" id="kurir">
-                                <option value="">Pilih Kurir</option>
-                                <option value="jne">JNE Reguler</option>
-                                <option value="tiki">TIKI</option>
-                                <option value="pos">POS Indonesia</option>
-                            </select>
-                        </div>
-
-                        <div class="summary-row">
-                            <span>Estimasi</span>
-                            <strong>2 – 3 Hari</strong>
-                        </div>
-                    </div>
-
-                    <hr>
-
-                    <!-- 2. METODE PEMBAYARAN -->
-                    <div class="summary-section">
-                        <h6 class="summary-title">Metode Pembayaran</h6>
-
-                        <div class="payment-method">
-                            <div>
-                                <input type="radio" name="payment" checked id="payment1">
-                                <label for="payment1">Transfer Bank (Midtrans)</label>
-                            </div>
-                            <small class="text-muted">Admin Rp2.500</small>
-                        </div>
-
-                        <div class="payment-method">
-                            <div>
-                                <input type="radio" name="payment" id="payment2">
-                                <label for="payment2">QRIS</label>
-                            </div>
-                            <small class="text-muted">Admin Rp1.000</small>
-                        </div>
-
-                        <div class="payment-method">
-                            <div>
-                                <input type="radio" name="payment" id="payment3">
-                                <label for="payment3">E-Wallet (OVO, DANA, GoPay)</label>
-                            </div>
-                            <small class="text-muted">Admin Rp3.000</small>
-                        </div>
-                    </div>
-
-                    <hr>
-
-                    <!-- 3. DETAIL PEMBAYARAN -->
-                    <div class="summary-section">
-                        <h6 class="summary-title">Detail Pembayaran</h6>
-
-                        <div class="summary-row">
-                            <span>Sub Total</span>
-                            <strong>Rp151.400</strong>
-                        </div>
-
-                        <div class="summary-row">
-                            <span>Ongkir</span>
-                            <strong>Rp20.000</strong>
-                        </div>
-
-                        <div class="summary-row">
-                            <span>Pajak</span>
-                            <strong>Rp1.500</strong>
-                        </div>
-
-                        <div class="summary-row total">
-                            <strong>Order Total</strong>
-                            <strong>Rp172.900</strong>
-                        </div>
-                    </div>
-
-                    <button class="btn btn-primary w-100 mt-3">
-                        Lanjut ke Pembayaran
+                    <!-- TAB BUTTON -->
+                    <button class="tab-btn active" data-tab="account">
+                        👤 Account Info
                     </button>
 
+                    <button class="tab-btn" data-tab="orders">
+                        📦 Orderan Saya
+                    </button>
+
+                    <button class="tab-btn" data-tab="address">
+                        📍 Alamat
+                    </button>
+
+                    <button class="tab-btn" data-tab="password">
+                        🔒 Ganti Password
+                    </button>
                 </div>
             </div>
 
+            <!-- CONTENT -->
+            <div class="col-md-9">
+                <div class="account-content">
+
+                    <!-- TAB: ACCOUNT INFO -->
+                    <div class="tab-content active" id="account">
+                        <h5 class="fw-bold mb-4">Akun Info</h5>
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Nama Depan</label>
+                                <input class="form-control" value="Mark">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Nama Belakang</label>
+                                <input class="form-control" value="Cole">
+                            </div>
+
+                            <div class="col-md-12">
+                                <label class="form-label">Email</label>
+                                <input class="form-control" value="digitalmusik@gmail.com">
+                            </div>
+
+                            <div class="col-md-12">
+                                <label class="form-label">Nomor HP</label>
+                                <input class="form-control" value="+628123456789">
+                            </div>
+                        </div>
+
+                        <button class="btn btn-success mt-4">
+                            Simpan Perubahan
+                        </button>
+                    </div>
+
+                    <!-- TAB: ORDERS -->
+                    <div class="tab-content" id="orders">
+                        <h5 class="fw-bold mb-3">Orderan Saya</h5>
+
+                        <!-- ORDER STATUS TAB -->
+                        <div class="order-tabs">
+                            <button class="order-tab active" data-status="all">🔥 Semua</button>
+                            <button class="order-tab" data-status="pending">⏳ Menunggu Pembayaran</button>
+                            <button class="order-tab" data-status="process">⚙️ Diproses</button>
+                            <button class="order-tab" data-status="shipped">🚚 Dikirim</button>
+                            <button class="order-tab" data-status="done">✅ Selesai</button>
+                            <button class="order-tab" data-status="cancel">❌ Dibatalkan</button>
+                        </div>
+
+                        <!-- ORDER LIST -->
+                        <div class="order-list">
+
+                            <!-- ORDER CARD -->
+                            <div class="order-card" data-status="process">
+                                <div class="order-header">
+                                    <strong>#ORD12345</strong>
+                                    <span class="badge bg-warning text-dark">Diproses</span>
+                                </div>
+                                <p class="text-muted mb-1">2 Produk • Rp 1.250.000</p>
+                                <small class="text-muted">20 Mei 2025</small>
+                            </div>
+
+                            <div class="order-card" data-status="pending">
+                                <div class="order-header">
+                                    <strong>#ORD12346</strong>
+                                    <span class="badge bg-secondary">Menunggu Pembayaran</span>
+                                </div>
+                                <p class="text-muted mb-1">1 Produk • Rp 450.000</p>
+                                <small class="text-muted">21 Mei 2025</small>
+                            </div>
+
+                            <div class="order-card" data-status="done">
+                                <div class="order-header">
+                                    <strong>#ORD12347</strong>
+                                    <span class="badge bg-success">Selesai</span>
+                                </div>
+                                <p class="text-muted mb-1">3 Produk • Rp 2.100.000</p>
+                                <small class="text-muted">18 Mei 2025</small>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- TAB: ADDRESS -->
+                    <div class="tab-content" id="address">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="fw-bold mb-0">Alamat Saya</h5>
+                            <button class="btn btn-outline-success btn-sm" id="btnAddAddress">
+                                + Tambah Alamat
+                            </button>
+                        </div>
+
+                        <!-- LIST ALAMAT -->
+                        <div class="address-list">
+
+                            <div class="address-card">
+                                <div class="d-flex justify-content-between">
+                                    <strong>🏠 Rumah</strong>
+                                    <span class="badge bg-success">Utama</span>
+                                </div>
+                                <p class="mb-1 mt-1">
+                                    Jl. Pinangsia Raya No.25, Jakarta Barat
+                                </p>
+                                <small class="text-muted">(+62) 812-3456-789</small>
+                            </div>
+
+                        </div>
+
+                        <!-- FORM TAMBAH ALAMAT -->
+                        <div class="address-form" id="addressForm">
+                            <h6 class="fw-bold mb-3">Tambah Alamat Baru</h6>
+
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Label Alamat</label>
+                                    <input class="form-control" placeholder="Contoh: Rumah, Kantor">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Nama Penerima</label>
+                                    <input class="form-control" placeholder="Nama lengkap">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label class="form-label">Nomor Handphone</label>
+                                    <input class="form-control" placeholder="+62...">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label class="form-label">Alamat Lengkap</label>
+                                    <textarea class="form-control" rows="3"
+                                        placeholder="Nama jalan, nomor rumah, patokan"></textarea>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Kota</label>
+                                    <input class="form-control" placeholder="Jakarta Barat">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Kode Pos</label>
+                                    <input class="form-control" placeholder="11110">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label class="form-check">
+                                        <input type="checkbox" class="form-check-input">
+                                        Jadikan alamat utama
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="mt-3 d-flex gap-2">
+                                <button class="btn btn-success btn-sm">
+                                    Simpan Alamat
+                                </button>
+                                <button class="btn btn-light btn-sm" id="btnCancelAddress">
+                                    Batal
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB: PASSWORD -->
+                    <div class="tab-content" id="password">
+                        <h5 class="fw-bold mb-3">Ganti Password</h5>
+
+                        <div class="mb-2">
+                            <label class="form-label">Password Lama</label>
+                            <input class="form-control" placeholder="Password Lama">
+                        </div>
+
+                        <div class="mb-2">
+                            <label class="form-label">Password Baru</label>
+                            <input class="form-control" placeholder="Password Baru">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Konfirmasi Password</label>
+                            <input class="form-control" placeholder="Konfirmasi Password">
+                        </div>
+
+                        <button class="btn btn-success">
+                            Update Password
+                        </button>
+                    </div>
+
+                </div>
+            </div>
 
         </div>
     </div>
+
 
 
     <!-- flash sale -->
@@ -881,6 +920,52 @@
     <script src="js/scripts.js"></script>
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tabs = document.querySelectorAll('.tab-btn');
+        const contents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabs.forEach(b => b.classList.remove('active'));
+                contents.forEach(c => c.classList.remove('active'));
+
+                btn.classList.add('active');
+                document.getElementById(btn.dataset.tab).classList.add('active');
+            });
+        });
+        const orderTabs = document.querySelectorAll('.order-tab');
+        const orders = document.querySelectorAll('.order-card');
+
+        orderTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                orderTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                const status = tab.dataset.status;
+
+                orders.forEach(order => {
+                    if (status === 'all' || order.dataset.status === status) {
+                        order.style.display = 'block';
+                    } else {
+                        order.style.display = 'none';
+                    }
+                });
+            });
+        });
+        const btnAdd = document.getElementById('btnAddAddress');
+        const btnCancel = document.getElementById('btnCancelAddress');
+        const form = document.getElementById('addressForm');
+
+        btnAdd.addEventListener('click', () => {
+            form.style.display = 'block';
+            btnAdd.style.display = 'none';
+        });
+
+        btnCancel.addEventListener('click', () => {
+            form.style.display = 'none';
+            btnAdd.style.display = 'inline-block';
+        });
+    </script>
 </body>
 
 </html>
